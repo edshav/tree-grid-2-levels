@@ -166,13 +166,13 @@ function render() {
 
         <td class="r">
           <div class="cell num">
-            ${vr ? `${vr.txn} / ${vr.amt}` : "—"}
+            ${vr ? `${vr.txn} tx / ${vr.amt}` : "—"}
           </div>
         </td>
 
         <td class="r">
           <div class="cell num">
-            ${sr ? `${sr.txn} / ${sr.amt}` : "—"}
+            ${sr ? `${sr.txn} tx / ${sr.amt}` : "—"}
           </div>
         </td>
 
@@ -185,7 +185,7 @@ function render() {
     if (open) {
       html += `
         <tr class="row-detail">
-          <td colspan="9">
+          <td colspan="8">
             <div class="detail-panel">
 
               <div class="detail-section">
@@ -236,7 +236,7 @@ function render() {
       `;
     }
 
-    html += `<tr class="row-sep"><td colspan="9"></td></tr>`;
+    html += `<tr class="row-sep"><td colspan="8"></td></tr>`;
   });
 
   tbody.innerHTML = html;
