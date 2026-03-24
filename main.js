@@ -191,7 +191,7 @@ function render() {
               <div class="detail-section">
                 <div class="detail-title">VAR</div>
                 <div class="detail-grid">
-                  <div>Txn</div><div>${vr?.txn ?? "—"}</div>
+                  <div>tx</div><div>${vr?.txn ?? "—"}</div>
                   <div>Amount</div><div>${vr?.amt ?? "—"}</div>
                   <div>Size</div><div>${vr?.size ?? "—"}</div>
                 </div>
@@ -200,7 +200,7 @@ function render() {
               <div class="detail-section">
                 <div class="detail-title">SKA</div>
                 <div class="detail-grid">
-                  <div>Txn</div><div>${sr?.txn ?? "—"}</div>
+                  <div>tx</div><div>${sr?.txn ?? "—"}</div>
                   <div>Amount</div><div>${sr?.amt ?? "—"}</div>
                   <div>Size</div><div>${sr?.size ?? "—"}</div>
                 </div>
