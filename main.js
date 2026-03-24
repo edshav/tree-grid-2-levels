@@ -18,20 +18,17 @@ const blocks = [
     tkt: 3,
     rev: 1,
     age: "2m 14s",
-    rows: [
-      { type: "VAR", txn: 4, amt: "6.2501", size: "1.1 kB", subs: [] },
-      {
-        type: "SKA",
-        txn: 3,
-        amt: "6.6343",
-        size: "3.8 kB",
-        subs: [
-          { coin: "SKA-1", txn: 1, amt: "1.0000", size: "312 B" },
-          { coin: "SKA-2", txn: 1, amt: "2.3120", size: "298 B" },
-          { coin: "SKA-3", txn: 1, amt: "3.3223", size: "315 B" },
-        ],
-      },
-    ],
+    var: { txn: 4, amt: "6.2501", size: "1.1 kB", subs: [] },
+    ska: {
+      txn: 3,
+      amt: "6.6343",
+      size: "3.8 kB",
+      subs: [
+        { coin: "SKA-1", txn: 1, amt: "1.0000", size: "312 B" },
+        { coin: "SKA-2", txn: 1, amt: "2.3120", size: "298 B" },
+        { coin: "SKA-3", txn: 1, amt: "3.3223", size: "315 B" },
+      ],
+    },
   },
   {
     height: 891041,
@@ -40,19 +37,16 @@ const blocks = [
     tkt: 1,
     rev: 0,
     age: "4m 07s",
-    rows: [
-      { type: "VAR", txn: 2, amt: "4.0000", size: "890 B", subs: [] },
-      {
-        type: "SKA",
-        txn: 2,
-        amt: "6.5021",
-        size: "2.1 kB",
-        subs: [
-          { coin: "SKA-1", txn: 1, amt: "3.2500", size: "320 B" },
-          { coin: "SKA-7", txn: 1, amt: "3.2521", size: "301 B" },
-        ],
-      },
-    ],
+    var: { txn: 2, amt: "4.0000", size: "890 B", subs: [] },
+    ska: {
+      txn: 2,
+      amt: "6.5021",
+      size: "2.1 kB",
+      subs: [
+        { coin: "SKA-1", txn: 1, amt: "3.2500", size: "320 B" },
+        { coin: "SKA-7", txn: 1, amt: "3.2521", size: "301 B" },
+      ],
+    },
   },
   {
     height: 891040,
@@ -61,21 +55,18 @@ const blocks = [
     tkt: 2,
     rev: 2,
     age: "6m 51s",
-    rows: [
-      { type: "VAR", txn: 3, amt: "3.9100", size: "750 B", subs: [] },
-      {
-        type: "SKA",
-        txn: 7,
-        amt: "4.2400",
-        size: "1.7 kB",
-        subs: [
-          { coin: "SKA-1", txn: 2, amt: "1.1200", size: "290 B" },
-          { coin: "SKA-4", txn: 1, amt: "1.5600", size: "278 B" },
-          { coin: "SKA-12", txn: 3, amt: "0.8800", size: "260 B" },
-          { coin: "SKA-19", txn: 1, amt: "0.6800", size: "255 B" },
-        ],
-      },
-    ],
+    var: { txn: 3, amt: "3.9100", size: "750 B", subs: [] },
+    ska: {
+      txn: 7,
+      amt: "4.2400",
+      size: "1.7 kB",
+      subs: [
+        { coin: "SKA-1", txn: 2, amt: "1.1200", size: "290 B" },
+        { coin: "SKA-4", txn: 1, amt: "1.5600", size: "278 B" },
+        { coin: "SKA-12", txn: 3, amt: "0.8800", size: "260 B" },
+        { coin: "SKA-19", txn: 1, amt: "0.6800", size: "255 B" },
+      ],
+    },
   },
   {
     height: 891039,
@@ -84,22 +75,19 @@ const blocks = [
     tkt: 4,
     rev: 0,
     age: "9m 33s",
-    rows: [
-      { type: "VAR", txn: 6, amt: "10.3100", size: "3.3 kB", subs: [] },
-      {
-        type: "SKA",
-        txn: 9,
-        amt: "5.0110",
-        size: "4.2 kB",
-        subs: [
-          { coin: "SKA-2", txn: 2, amt: "0.9500", size: "310 B" },
-          { coin: "SKA-5", txn: 1, amt: "1.2300", size: "295 B" },
-          { coin: "SKA-11", txn: 3, amt: "1.4100", size: "308 B" },
-          { coin: "SKA-23", txn: 2, amt: "0.7200", size: "280 B" },
-          { coin: "SKA-47", txn: 1, amt: "0.7010", size: "272 B" },
-        ],
-      },
-    ],
+    var: { txn: 6, amt: "10.3100", size: "3.3 kB", subs: [] },
+    ska: {
+      txn: 9,
+      amt: "5.0110",
+      size: "4.2 kB",
+      subs: [
+        { coin: "SKA-2", txn: 2, amt: "0.9500", size: "310 B" },
+        { coin: "SKA-5", txn: 1, amt: "1.2300", size: "295 B" },
+        { coin: "SKA-11", txn: 3, amt: "1.4100", size: "308 B" },
+        { coin: "SKA-23", txn: 2, amt: "0.7200", size: "280 B" },
+        { coin: "SKA-47", txn: 1, amt: "0.7010", size: "272 B" },
+      ],
+    },
   },
   {
     height: 891038,
@@ -108,33 +96,20 @@ const blocks = [
     tkt: 2,
     rev: 1,
     age: "12m 05s",
-    rows: [
-      { type: "VAR", txn: 5, amt: "7.6600", size: "2.0 kB", subs: [] },
-      {
-        type: "SKA",
-        txn: 4,
-        amt: "3.7800",
-        size: "2.5 kB",
-        subs: [
-          { coin: "SKA-3", txn: 2, amt: "1.5000", size: "330 B" },
-          { coin: "SKA-8", txn: 2, amt: "2.2800", size: "310 B" },
-        ],
-      },
-    ],
+    var: { txn: 5, amt: "7.6600", size: "2.0 kB", subs: [] },
+    ska: {
+      txn: 4,
+      amt: "3.7800",
+      size: "2.5 kB",
+      subs: [
+        { coin: "SKA-3", txn: 2, amt: "1.5000", size: "330 B" },
+        { coin: "SKA-8", txn: 2, amt: "2.2800", size: "310 B" },
+      ],
+    },
   },
 ];
 
-/* ─────────────────────────────────────────────────────────────────────────
-   STATE
-   "b{i}"     → block i expanded (L1 → L2)
-   "b{i}r{j}" → block i, row j (SKA) expanded (L2 → L3)
-───────────────────────────────────────────────────────────────────────── */
-const state = {
-  openRow: null,
-};
-
-/* ── Shared dash cell ──────────────────────────────────────────────────── */
-const DASH = `<td class="r"><div class="dash">—</div></td>`;
+const state = {};
 
 /* ─────────────────────────────────────────────────────────────────────────
    RENDER
@@ -145,14 +120,14 @@ function render() {
 
   blocks.forEach((block, bi) => {
     const key = "b" + bi;
-    const open = state.openRow === key;
+    const open = !!state[key];
 
-    const vr = block.rows.find((r) => r.type === "VAR");
-    const sr = block.rows.find((r) => r.type === "SKA");
+    const vr = block.var;
+    const sr = block.ska;
 
     /* ── Main row (Level 1) ───────────────────────── */
     html += `
-      <tr class="row-root">
+      <tr class="row-root ${open ? "open" : ""}">
         <td class="l">
           <div class="cell">
             <span class="caret ${open ? "open" : ""}" data-key="${key}">&#9658;</span>
@@ -240,48 +215,32 @@ function render() {
   });
 
   tbody.innerHTML = html;
-  updateCount();
-  attachCarets();
 }
-
-/* ── Caret listeners ────────────────────────────────────────────────────── */
-function attachCarets() {
-  document.querySelectorAll(".caret[data-key]").forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      const key = el.dataset.key;
-
-      state.openRow = state.openRow === key ? null : key;
-
-      render();
-    });
-  });
-}
-/* ── Row counter ────────────────────────────────────────────────────────── */
-function updateCount() {
-  const n = document.querySelectorAll(
-    "tr.row-root, tr.row-txn, tr.row-sub",
-  ).length;
-  document.getElementById("row-count").textContent = n + " rows visible";
-}
-
-/* ── Toolbar ────────────────────────────────────────────────────────────── */
-document.getElementById("btn-expand").addEventListener("click", () => {
-  blocks.forEach((block, bi) => {
-    state["b" + bi] = true;
-    block.rows.forEach((row, ri) => {
-      if (row.type === "SKA" && row.subs.length)
-        state["b" + bi + "r" + ri] = true;
-    });
-  });
-  render();
-});
-
-document.getElementById("btn-collapse").addEventListener("click", () => {
-  Object.keys(state).forEach((k) => delete state[k]);
-  render();
-});
 
 /* ── Boot ───────────────────────────────────────────────────────────────── */
 render();
+
+document.addEventListener("click", (e) => {
+  // Ignore clicks on links
+  if (e.target.closest("a")) return;
+
+  const row = e.target.closest("tr.row-root");
+  if (!row) return;
+
+  const caret = row.querySelector(".caret[data-key]");
+  if (!caret) return;
+
+  const key = caret.dataset.key;
+
+  const isOpen = !!state[key];
+
+  // Reset all state (close everything)
+  Object.keys(state).forEach((k) => delete state[k]);
+
+  // Toggle current row
+  if (!isOpen) {
+    state[key] = true;
+  }
+
+  render();
+});

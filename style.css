@@ -228,8 +228,14 @@ td.r .cell {
 }
 
 /* ── Row types ── */
+tr.row-root {
+  cursor: pointer;
+}
 tr.row-root td {
   background: var(--bg-root);
+}
+.row-root.open td {
+  background: var(--bg-hover);
 }
 tr.row-root .cell {
   font-weight: 600;
@@ -244,7 +250,7 @@ tr.row-sub .cell {
   color: var(--text-secondary);
   font-size: 11.5px;
 }
-tr:hover td {
+tr.row-root:hover td {
   background: var(--bg-hover) !important;
 }
 
