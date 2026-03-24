@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blockchain Explorer — TreeGrid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Blockchain Explorer</h1>
+  <p>Click ▶ next to a block height to expand transactions. Click ▶ on an SKA row to expand sub-transactions.</p>
+</header>
+
+<div class="card">
+  <div class="toolbar">
+    <div class="toolbar-left">
+      <button class="btn" id="btn-expand">Expand all</button>
+      <button class="btn" id="btn-collapse">Collapse all</button>
+    </div>
+    <div class="toolbar-right" id="row-count"></div>
+  </div>
+
+  <div class="scroll-wrap">
+    <table>
+      <colgroup>
+        <col class="c-height">
+        <col class="c-txn">
+        <col class="c-var">
+        <col class="c-ska">
+        <col class="c-size">
+        <col class="c-votes">
+        <col class="c-tkt">
+        <col class="c-rev">
+        <col class="c-age">
+      </colgroup>
+      <thead>
+        <tr>
+          <th class="l" title="Block height — sequential block number">Height</th>
+          <th class="r" title="Total number of regular transactions (VAR + SKA) in this block">Txn</th>
+          <th class="r" title="Total amount of VAR coins transferred in regular VAR transactions">VAR</th>
+          <th class="r" title="Total amount of SKA coins transferred in regular SKA transactions">SKA</th>
+          <th class="r" title="Total block size — sum of all transaction sizes">Size</th>
+          <th class="r" title="Tickets voted — number of tickets that voted to include this block in the blockchain">Votes</th>
+          <th class="r" title="Tickets purchased — number of voting tickets bought in this block">Tkt</th>
+          <th class="r" title="Tickets revoked — annulled due to wallet inactivity or voting period expiry">Rev</th>
+          <th class="r" title="Block age — time elapsed since this block was added to the blockchain">Age</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="legend">
+  <span class="legend-item"><span class="badge bv">VAR</span> Regular VAR coin-transfer transactions</span>
+  <span class="legend-item"><span class="badge bs">SKA</span> SKA category — expandable to coin types</span>
+  <span class="legend-item"><span class="badge bsu">SKA-n</span> Individual SKA coin type (1–255)</span>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
